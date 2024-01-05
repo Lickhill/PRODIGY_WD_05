@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather app</title>
+		<style>
+			input[type="text"] {
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				font-size: 16px;
+				color: #333;
+			}
+
+			button {
+				padding: 10px 20px;
+				background-color: #4caf50; /* Green background */
+				border: none; /* Remove borders */
+				color: white; /* White text */
+				text-align: center; /* Centered text */
+				text-decoration: none; /* No underline */
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer; /* Mouse pointer on hover */
+			}
+
+			button:hover {
+				background-color: #45a049; /* Darker green on hover */
+			}
+		</style>
+	</head>
+	<body
+		style="
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #eceffc;
+		"
+	>
+		<div
+			style="
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 50px 40px;
+				color: white;
+				background: rgba(0, 0, 0, 0.8);
+				border-radius: 10px;
+				box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+					0 1px 1px rgba(128, 128, 128, 0.155),
+					0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+					0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+					0 12px 12px rgba(128, 128, 128, 0.35);
+			"
+		>
+			<h1>Weather.</h1>
+			<form action="/" method="post">
+				<input type="text" name="city name" placeholder="city name" />
+				<button type="submit" name="submit">Search</button>
+			</form>
+		</div>
+	</body>
+</html>
